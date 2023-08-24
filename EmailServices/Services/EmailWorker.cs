@@ -27,10 +27,6 @@ namespace EmailServices.Services
                 //var dbContext = scope.ServiceProvider.GetRequiredService<UserContext>();
                 var emailService = scope.ServiceProvider.GetRequiredService<IEmailService>();
 
-                //// Query the database for users and their email addresses
-                //var users = dbContext.Users.ToList();
-
-                //I Created a static list only of users
                 var mockUsers = new List<User>
                 {
                      new User { Id = 1, Email = "user1@example.com" },
